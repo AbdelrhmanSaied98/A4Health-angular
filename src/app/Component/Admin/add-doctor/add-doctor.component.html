@@ -244,6 +244,7 @@
             <div class="alert alert-danger" 
             *ngIf="AddDoctor.get('phone')?.errors && AddDoctor.get('phone')?.touched">
                 <p class="m-0" *ngIf="AddDoctor.get('phone')?.errors?.['required']">phone is required</p>
+                <p class="m-0" *ngIf="AddDoctor.get('phone')?.errors?.['pattern']">phone is invalid</p>
             </div> 
           </div>
           <div class="mb-3">
